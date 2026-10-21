@@ -1,14 +1,111 @@
+
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LifeSaga – Life Simulator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LifeSaga – Life Simulator</title>
+  <meta name="description" content="LifeSaga – Make choices, build your future, and live your own story. Available on Google Play.">
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #07142b;
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      position: relative;
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+    .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .hotspot {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .hotspot:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
+    .hotspot:hover {
+      background: rgba(255,255,255,0.12);
+    }
+    .play {
+      left: 41.1%;
+      top: 54.7%;
+      width: 17.1%;
+      height: 9.3%;
+    }
+    .more {
+      left: 44.4%;
+      top: 68.3%;
+      width: 10.5%;
+      height: 5.3%;
+    }
+    .privacy {
+      left: 45.8%;
+      top: 89.7%;
+      width: 8.4%;
+      height: 4.1%;
+    }
+    .details {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 45px 24px 70px;
+      color: white;
+      text-align: center;
+      line-height: 1.7;
+    }
+    .details h2 { color: #ffca75; }
+    .details a { color: #ffca75; }
+  </style>
 </head>
 <body>
-<h1>LifeSaga – Life Simulator</h1>
-<p>Official website of LifeSaga.</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.szabi.lifesaga">Get it on Google Play</a></p>
-<p><a href="https://lifesagathegame.github.io/lifesaga-privacy/">Privacy Policy</a></p>
+  <main>
+    <div class="hero">
+      <img src="lifesaga-background.png"
+           alt="LifeSaga – Life Simulator">
+
+      <a class="hotspot play"
+         href="https://play.google.com/store/apps/details?id=com.szabi.lifesaga"
+         aria-label="Get LifeSaga on Google Play"></a>
+
+      <a class="hotspot more"
+         href="#about"
+         aria-label="Learn more about LifeSaga"></a>
+
+      <a class="hotspot privacy"
+         href="https://lifesagathegame.github.io/lifesaga-privacy/"
+         aria-label="Privacy Policy"></a>
+    </div>
+
+    <section id="about" class="details">
+      <h2>Your life. Your choices.</h2>
+      <p>
+        Explore different life paths, make decisions,
+        develop your character and discover where
+        your story takes you in LifeSaga.
+      </p>
+      <p>
+        <a href="https://play.google.com/store/apps/details?id=com.szabi.lifesaga">
+          Download LifeSaga on Google Play
+        </a>
+      </p>
+      <p>
+        <a href="https://lifesagathegame.github.io/lifesaga-privacy/">
+          Privacy Policy
+        </a>
+      </p>
+    </section>
+  </main>
 </body>
 </html>
